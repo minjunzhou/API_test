@@ -1,0 +1,576 @@
+{
+    "config": {
+        "name": "testcase description",
+        "variables": {}
+    },
+    "teststeps": [
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "111111111111111111111111111111111111111111111111111111111111111",
+                    "b": "nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        "nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao 111111111111111111111111111111111111111111111111111111111111111"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "b": "$%^&*!"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        "$%^&*!"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "111111111111111111111111111111111111111111111111111111111111111",
+                    "b": "$%^&*!"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        "$%^&*! 111111111111111111111111111111111111111111111111111111111111111"
+                    ]
+                }
+            ]
+        },
+
+         {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "b": "nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        "nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "111111111111111111111111111111111111111111111111111111111111111"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        21
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "empty or wrong params"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        null
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "b": "22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        "22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        21
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "empty or wrong params"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        null
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao",
+                    "b": "nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        21
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "empty or wrong params"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        null
+                    ]
+                }
+            ]
+        },
+
+         {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao",
+                    "b": "22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        21
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "empty or wrong params"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        null
+                    ]
+                }
+            ]
+        },
+
+         {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "111111111111111111111111111111111111111111111111111111111111111",
+                    "b": "22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        "22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 111111111111111111111111111111111111111111111111111111111111111"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "$%^&*@!"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        21
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "empty or wrong params"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        null
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "$%^&*@!",
+                    "b": "$%^&*@!"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        21
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "empty or wrong params"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        null
+                    ]
+                }
+            ]
+        }
+    ]
+}

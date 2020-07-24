@@ -1,0 +1,55 @@
+{
+    "config": {
+        "name": "testcase description",
+        "variables": {}
+    },
+    "teststeps": [
+        {
+            "name": "/shopee/test",
+            "request": {
+                "url": "http://localhost.charlesproxy.com:5000/shopee/test",
+                "params": {
+                    "a": "1",
+                    "b": "nihao"
+                },
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
+                    "Purpose": "prefetch"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.error_message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.reference",
+                        "nihao 1"
+                    ]
+                }
+            ]
+        }
+    ]
+}

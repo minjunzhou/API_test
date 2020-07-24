@@ -1,0 +1,3385 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2020-06-09T05:48:10.845775</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">0.046 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.5.7 </td>
+      <td>CPython 3.8.3 </td>
+      <td colspan="2">macOS-10.15.4-x86_64-i386-64bit</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (1/0)</td>
+      <td colspan="2">12 (12/0/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>testcase description</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 12</td>
+      <td>SUCCESS: 12</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">5.11 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=111111111111111111111111111111111111111111111111111111111111111&b=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=111111111111111111111111111111111111111111111111111111111111111&b=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;193&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 0,
+  &#34;error_message&#34;: &#34;success&#34;,
+  &#34;reference&#34;: &#34;nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao 111111111111111111111111111111111111111111111111111111111111111&#34;
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>success</td>
+                      <td>success</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao 111111111111111111111111111111111111111111111111111111111111111</td>
+                      <td>nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao 111111111111111111111111111111111111111111111111111111111111111</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>193</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>5.11</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>2.223</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.77 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?b=%24%25%5E%26%2A%21
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?b=%24%25%5E%26%2A%21
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;64&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 0,
+  &#34;error_message&#34;: &#34;success&#34;,
+  &#34;reference&#34;: &#34;$%^&amp;*!&#34;
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>success</td>
+                      <td>success</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>$%^&amp;*!</td>
+                      <td>$%^&amp;*!</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>64</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.77</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.882</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_3">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.55 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_3_1">log-1</a>
+        <div id="popup_log_1_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=111111111111111111111111111111111111111111111111111111111111111&b=%24%25%5E%26%2A%21
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=111111111111111111111111111111111111111111111111111111111111111&b=%24%25%5E%26%2A%21
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;128&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 0,
+  &#34;error_message&#34;: &#34;success&#34;,
+  &#34;reference&#34;: &#34;$%^&amp;*! 111111111111111111111111111111111111111111111111111111111111111&#34;
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>success</td>
+                      <td>success</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>$%^&amp;*! 111111111111111111111111111111111111111111111111111111111111111</td>
+                      <td>$%^&amp;*! 111111111111111111111111111111111111111111111111111111111111111</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>128</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.55</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.716</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_4">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.46 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_4_1">log-1</a>
+        <div id="popup_log_1_4_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_4_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?b=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?b=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;129&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 0,
+  &#34;error_message&#34;: &#34;success&#34;,
+  &#34;reference&#34;: &#34;nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao&#34;
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>success</td>
+                      <td>success</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao</td>
+                      <td>nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>129</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.46</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.624</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_5">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.16 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_5_1">log-1</a>
+        <div id="popup_log_1_5_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_5_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=111111111111111111111111111111111111111111111111111111111111111
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=111111111111111111111111111111111111111111111111111111111111111
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;75&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 21,
+  &#34;error_message&#34;: &#34;empty or wrong params&#34;,
+  &#34;reference&#34;: null
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>21</td>
+                      <td>21</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>empty or wrong params</td>
+                      <td>empty or wrong params</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>75</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.16</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.361</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_6">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.83 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_6_1">log-1</a>
+        <div id="popup_log_1_6_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_6_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?b=22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?b=22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;147&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 0,
+  &#34;error_message&#34;: &#34;success&#34;,
+  &#34;reference&#34;: &#34;22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222&#34;
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>success</td>
+                      <td>success</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</td>
+                      <td>22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>147</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.83</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.952</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_7">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.80 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_7_1">log-1</a>
+        <div id="popup_log_1_7_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_7_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;75&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 21,
+  &#34;error_message&#34;: &#34;empty or wrong params&#34;,
+  &#34;reference&#34;: null
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>21</td>
+                      <td>21</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>empty or wrong params</td>
+                      <td>empty or wrong params</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>75</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.8</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.702</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_8">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.40 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_8_1">log-1</a>
+        <div id="popup_log_1_8_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_8_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao&b=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao&b=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;75&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 21,
+  &#34;error_message&#34;: &#34;empty or wrong params&#34;,
+  &#34;reference&#34;: null
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>21</td>
+                      <td>21</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>empty or wrong params</td>
+                      <td>empty or wrong params</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>75</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.4</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.526</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_9">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.96 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_9_1">log-1</a>
+        <div id="popup_log_1_9_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_9_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao&b=22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=nihaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohaohao&b=22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;75&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 21,
+  &#34;error_message&#34;: &#34;empty or wrong params&#34;,
+  &#34;reference&#34;: null
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>21</td>
+                      <td>21</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>empty or wrong params</td>
+                      <td>empty or wrong params</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>75</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.96</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.881</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_10">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.53 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_10_1">log-1</a>
+        <div id="popup_log_1_10_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_10_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=111111111111111111111111111111111111111111111111111111111111111&b=22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=111111111111111111111111111111111111111111111111111111111111111&b=22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;211&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 0,
+  &#34;error_message&#34;: &#34;success&#34;,
+  &#34;reference&#34;: &#34;22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 111111111111111111111111111111111111111111111111111111111111111&#34;
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>success</td>
+                      <td>success</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 111111111111111111111111111111111111111111111111111111111111111</td>
+                      <td>22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 111111111111111111111111111111111111111111111111111111111111111</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>211</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.53</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.653</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_11">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.52 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_11_1">log-1</a>
+        <div id="popup_log_1_11_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_11_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=%24%25%5E%26%2A%40%21
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=%24%25%5E%26%2A%40%21
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;75&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 21,
+  &#34;error_message&#34;: &#34;empty or wrong params&#34;,
+  &#34;reference&#34;: null
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>21</td>
+                      <td>21</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>empty or wrong params</td>
+                      <td>empty or wrong params</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>75</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.52</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.523</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_12">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/shopee/test</td>
+      <td style="text-align:center;width:6em;">2.35 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_12_1">log-1</a>
+        <div id="popup_log_1_12_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_12_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /shopee/test</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=%24%25%5E%26%2A%40%21&b=%24%25%5E%26%2A%40%21
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Purpose&#34;: &#34;prefetch&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://localhost.charlesproxy.com:5000/shopee/test?a=%24%25%5E%26%2A%40%21&b=%24%25%5E%26%2A%40%21
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;Content-Length&#34;: &#34;75&#34;,
+  &#34;Server&#34;: &#34;Werkzeug/1.0.1 Python/3.8.3&#34;,
+  &#34;Date&#34;: &#34;Tue, 09 Jun 2020 05:48:10 GMT&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;error_code&#34;: 21,
+  &#34;error_message&#34;: &#34;empty or wrong params&#34;,
+  &#34;reference&#34;: null
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json</td>
+                      <td>application/json</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_code
+                      </td>
+                      <td>equals</td>
+                      <td>21</td>
+                      <td>21</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.error_message
+                      </td>
+                      <td>equals</td>
+                      <td>empty or wrong params</td>
+                      <td>empty or wrong params</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.reference
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>75</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>2.35</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>1.386</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>

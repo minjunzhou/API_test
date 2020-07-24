@@ -1,0 +1,30 @@
+config:
+    name: testcase description
+    variables: {}
+teststeps:
+-   name: /shopee/test
+    request:
+        headers:
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+        method: GET
+        params:
+            a: '1'
+            b: '2'
+        url: http://localhost.charlesproxy.com:5000/shopee/test
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json
+    -   eq:
+        - content.error_code
+        - 0
+    -   eq:
+        - content.error_message
+        - success
+    -   eq:
+        - content.reference
+        - 2 1
